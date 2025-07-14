@@ -1,12 +1,11 @@
 // For testing purposes only.
-// Paste your key in the line below.
-
 const API_KEY = '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';
 const API_URL = 'https://api.openai.com/v1/chat/completions';
 
 export async function getAIResponse(prompt) {
   // A simple check to make sure you've added the key.
-  if (API_KEY === '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') {
+  // THE FIX IS HERE: This line should check for the original placeholder text.
+  if (API_KEY === 'PASTE_YOUR_OPENAI_API_KEY_HERE') {
     const message = "API Key not found. Please add your key to the js/openai.js file.";
     alert(message);
     return message;
